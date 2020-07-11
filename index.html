@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Sacramento&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+
+<div class="menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#idDivNavBar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="idDivNavBar">
+            <a class="navbar-brand" href="#">
+                <img src="images/face_co_transparent_200x200.png" width="30" height="30"
+                     class="d-inline-block align-top image-round" alt="">
+                Dev Profile
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<header>
+    <img src="images/cloud.png" alt="cloud-img" class="top-cloud">
+    <img src="images/cloud.png" alt="cloud-img" class="bottom-cloud">
+
+    <div class="presentation">
+        <h2 class="page-title">Java and Web Developer</h2>
+        <h1>in Switzerland</h1>
+        <img src="images/ch-flag.png" alt="Switzerland" class="flag">
+
+        <img src="images/mountain2.png" alt="mountain-img" class="mountain">
+
+
+
+        <a href="#profile" class="far fa-arrow-alt-circle-down fa-3x bottom-arrow-presentation"></a>
+    </div>
+
+    <div class="pic-attribution">
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+</header>
+
+<section>
+
+    <div class="container profile" id="profile">
+        <img src="images/face_co_200x200.png" alt="Face" class="face">
+        <h2>Hello.</h2>
+        <p>My name is Renaud. I'm a developer and I'm passionate about web technologies.</p>
+    </div>
+    <a href="#skills" class="far fa-arrow-alt-circle-down fa-3x bottom-arrow"></a>
+    <hr>
+
+    <div class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 skill-row">
+                    <img class="image-skill" src="images/react-hexagon.png" alt="computer">
+                    <h3>Web development - front end</h3>
+                    <div class="skill-element">HTML / CSS</div>
+                    <div class="skill-element">Javascript</div>
+                    <div class="skill-element">JQuery</div>
+                    <div class="skill-element">Bootstrap</div>
+                    <div class="skill-element">React.js</div>
+                </div>
+                <div class="col-lg-4 skill-row">
+                    <img class="image-skill" src="images/node_js.png" alt="computer">
+                    <h3>Web development - back end</h3>
+                    <div class="skill-element">Node.js</div>
+                    <div class="skill-element">Express.js</div>
+                    <div class="skill-element">EJS</div>
+                    <div class="skill-element">MongoDB</div>
+                    <div class="skill-element">Passport.js</div>
+                </div>
+                <div class="col-lg-4 skill-row">
+                    <img class="image-skill" src="images/java.png" alt="computer">
+                    <h3>Java development</h3>
+                    <div class="skill-element">Spring</div>
+                    <div class="skill-element">Spring Boot</div>
+                    <div class="skill-element">EJB</div>
+                    <div class="skill-element">Hibernate</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container contact-me" id="contact">
+        <h2>Get In Touch</h2>
+        <h3></h3>
+        <p></p>
+        <button type="button" class="btn btn-primary" onclick="location.href='mailto:renaud.proxy@protonmail.com';">
+            CONTACT ME
+        </button>
+    </div>
+
+</section>
+
+<footer>
+    <div class="social-links">
+        <a class="footer-link" href="https://www.linkedin.com/in/RSaulnier">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/RSaulnier-dev/">Github</a>
+    </div>
+    <p class="copyright">©2020 Renaud.</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/0fda83b226.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+<script>
+    var step = "70%";
+    moveClouds();
+
+    window.setInterval(() => {
+        moveClouds();
+    }, 12000);
+
+    function moveClouds() {
+        $(".top-cloud").animate({
+            right: step
+        }, 10000);
+
+        $(".bottom-cloud").animate({
+            left: step
+        }, 10000, () => {
+            if (step === "70%") {
+                step = "30%";
+            } else {
+                step = "70%";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
