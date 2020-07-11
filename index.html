@@ -44,6 +44,7 @@
 </div>
 
 <header>
+
     <img src="images/cloud.png" alt="cloud-img" class="top-cloud">
     <img src="images/cloud.png" alt="cloud-img" class="bottom-cloud">
 
@@ -51,17 +52,14 @@
         <h2 class="page-title">Java and Web Developer</h2>
         <h1>in Switzerland</h1>
         <img src="images/ch-flag.png" alt="Switzerland" class="flag">
-
         <img src="images/mountain2.png" alt="mountain-img" class="mountain">
-
-
-
         <a href="#profile" class="far fa-arrow-alt-circle-down fa-3x bottom-arrow-presentation"></a>
     </div>
 
     <div class="pic-attribution">
         Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
     </div>
+
 </header>
 
 <section>
@@ -134,31 +132,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
-<script>
-    var step = "70%";
-    moveClouds();
-
-    window.setInterval(() => {
-        moveClouds();
-    }, 12000);
-
-    function moveClouds() {
-        $(".top-cloud").animate({
-            right: step
-        }, 10000);
-
-        $(".bottom-cloud").animate({
-            left: step
-        }, 10000, () => {
-            if (step === "70%") {
-                step = "30%";
-            } else {
-                step = "70%";
-            }
-        });
-    }
-</script>
+<script src="behavior.js"></script>
 
 </body>
 </html>
