@@ -1,10 +1,14 @@
+var step = "70%";
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+
+$(window.onscroll = displayMenuOnTop);
+
+function displayMenuOnTop() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.querySelector(".menu").style.top = "0";
+        $(".menu").css("top","0");
     } else {
-        document.querySelector(".menu").style.top = "-60px";
+        $(".menu").css("top","-60px");
     }
     prevScrollpos = currentScrollPos;
 };
@@ -13,7 +17,6 @@ $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
 
-var step = "70%";
 $(moveClouds());
 
 $(window.setInterval(() => {
