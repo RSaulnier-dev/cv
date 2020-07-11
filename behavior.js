@@ -1,7 +1,7 @@
 var step = "70%";
 var prevScrollpos = window.pageYOffset;
 
-$(window.onscroll = displayMenuOnTop);
+window.onscroll = displayMenuOnTop;
 
 function displayMenuOnTop() {
     var currentScrollPos = window.pageYOffset;
